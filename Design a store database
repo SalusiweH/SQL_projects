@@ -1,0 +1,20 @@
+CREATE TABLE store (id INTEGER, item_name TEXT, quantity INTEGER, price INTEGER, exp_date TEXT); 
+
+INSERT INTO store VALUES (1, "Rice", 10, 25.00, "25-01-2024" );
+INSERT INTO store VALUES (2, "Mealie Meal", 10, 30.00, "25-01-2024" );
+INSERT INTO store VALUES (3, "Samp", 15, 20.00, "25-01-2024" );
+INSERT INTO store VALUES (4, "Dried Beans", 10, 10.00, "25-01-2024" );
+INSERT INTO store VALUES (5, "Carrots", 10, 12.00, "25-10-2023" );
+INSERT INTO store VALUES (6, "Baking soda", 10, 16.00, "25-01-2024" );
+INSERT INTO store VALUES (7,"Cake flour", 10,25.00, "25-01-2024" );
+INSERT INTO store VALUES (8, "Muffin Mix", 10, 15.00, "25-01-2024" );
+INSERT INTO store VALUES (9, "Rooibos Tea Bags",10,13.00, "25-01-2024" );
+INSERT INTO store VALUES (10, "Couscous", 10, 30.00, "25-01-2024" );
+INSERT INTO store VALUES (11, "Spaghetti", 10, 10.00, "25-01-2024" );
+INSERT INTO store VALUES (12, "Macaroni", 10, 10.00, "25-01-2024" );
+INSERT INTO store VALUES (13, "Penne", 10, 10.00, "25-01-2024" );
+INSERT INTO store VALUES (14, "Canned Beans", 10, 12.00, "25-01-2024" );
+INSERT INTO store VALUES (15, "Cooking Oil", 10, 75.00, "25-01-2024" );
+
+SELECT * FROM store ORDER BY price;
+SELECT sum(quantity) FROM store
